@@ -120,6 +120,8 @@ alter table Chitietmathangxuat
 add
 constraint				fk_Chitietmathangxuat_Mahang		foreign key (Mahang) references Mathang([Mahang]),
 constraint				fk_Chitietmathangxuat_Mahoadonxuat	foreign key (Mahoadonxuat) references Hoadonxuat([Mahoadonxuat])
+
+alter table Nhanvien drop column Gmail
 /*
 drop table Log_in
 drop table Sign_up
